@@ -36,3 +36,8 @@
 .arm-pair{display:flex;align-items:end;gap:11px}.arm-pair>span{display:flex;flex-direction:column;min-width:55px}.arm-pair i{font-size:9px;font-style:normal;font-weight:750;letter-spacing:.04em;color:#78909b;white-space:nowrap;margin-bottom:4px}.arm-pair strong{font-size:24px!important;line-height:1.05;color:#102a40;letter-spacing:-.055em}.arm-pair>span:first-child strong{color:#087c84}.arm-pair>em{font-style:normal;font-size:11px;color:#a1b4bb;align-self:end;margin-bottom:2px}.landscape-disclaimer{border-left:2px solid #52b7b6;padding-left:15px;color:#617987;font-size:11px}
 @media(max-width:850px){.arm-pair{gap:7px}.arm-pair strong{font-size:21px!important}.arm-pair i{font-size:8px}}
 @media(max-width:620px){.arm-pair{gap:12px}.arm-pair strong{font-size:23px!important}.arm-pair i{font-size:9px}}
+
+/* Trial arms are visible next to their own survival results. */
+.arm-pair{align-items:stretch;gap:12px}.arm-pair>span{flex:1;min-width:0}.arm-pair .arm-regimen{display:block;color:#536d7a;font-size:10px;font-weight:500;line-height:1.45;margin:0 0 8px;min-height:30px;white-space:normal}.arm-pair strong{margin-top:auto}.arm-pair>em{align-self:end}.result-status{color:#866b45!important;max-width:145px;white-space:normal!important;line-height:1.4}.agent-list summary{min-height:145px}.landscape-head,.agent-list summary{grid-template-columns:1fr 1.65fr .7fr 24px}
+@media(max-width:850px){.landscape-head,.agent-list summary{grid-template-columns:.9fr 1.5fr .65fr 18px;gap:12px}.agent-name strong{font-size:15px}}
+@media(max-width:620px){.agent-list summary{grid-template-columns:1fr 24px}.arm-pair .arm-regimen{font-size:10px}.agent-list summary .agent-hr{flex-wrap:wrap}.result-status{max-width:none;flex-basis:100%}}

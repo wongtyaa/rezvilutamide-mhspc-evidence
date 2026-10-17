@@ -1,0 +1,55 @@
+/* The approved museum illustration, animated as a gently orbiting picture plane. */
+.artwork-hero { background:#061525; isolation:isolate; }
+.hero-artwork { position:absolute; inset:0; overflow:hidden; pointer-events:none; perspective:1500px; }
+.specimen-art { position:absolute; inset:-4%; width:108%; height:108%; object-fit:cover; object-position:70% 48%; transform-origin:69% 53%; animation:specimen-orbit 26s ease-in-out infinite; will-change:transform; }
+.specimen-light { position:absolute; inset:-15%; background:radial-gradient(ellipse at 66% 16%,#c3e8ff18 0%,transparent 38%); mix-blend-mode:screen; animation:specimen-light 26s ease-in-out infinite; pointer-events:none; }
+.artwork-hero::before { content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,#061525e8 0%,#061525c7 24%,#06152575 43%,#06152510 63%,transparent 78%); pointer-events:none; }
+.artwork-hero::after { height:160px; background:linear-gradient(transparent,#061525e0); }
+.artwork-hero .hero-inner { position:relative; z-index:2; min-height:730px; grid-template-columns:47% 53%; padding-top:30px; padding-bottom:70px; }
+.artwork-hero .hero-copy { text-shadow:0 2px 18px #03122150; }
+.artwork-hero .hero-lede { color:#cad9e3; max-width:475px; }
+.artwork-hero .hero-note { color:#adbec9; max-width:375px; }
+.artwork-hero .hero-bottom { background:#0615258a; color:#b1c5d1; }
+.artwork-controls { position:absolute; right:4.2vw; bottom:28px; }
+.artwork-controls button { color:#e5f0f2; background:#071a2cba; border:1px solid #b4d1da66; padding:10px 15px; font:inherit; font-size:10px; letter-spacing:.05em; cursor:pointer; }
+.artwork-controls button:hover { background:#163447; border-color:#c9e6ea; }
+.artwork-controls button:disabled { cursor:default; opacity:.75; }
+.artwork-mobile-space { display:none; }
+.artwork-paused .specimen-art,.artwork-paused .specimen-light { animation-play-state:paused; }
+@keyframes specimen-orbit {
+  0%,100% { transform:rotateY(-4deg) rotateX(1deg) rotateZ(-.45deg) scale(1.035) translate3d(-.6%,.3%,0); }
+  50% { transform:rotateY(4deg) rotateX(-1deg) rotateZ(.45deg) scale(1.075) translate3d(.6%,-.3%,0); }
+}
+@keyframes specimen-light {
+  0%,100% { transform:translateX(-3%); opacity:.55; }
+  50% { transform:translateX(3%); opacity:1; }
+}
+@media(min-width:1600px) {
+  .artwork-hero .hero-inner { min-height:790px; }
+  .specimen-art { object-position:70% 43%; }
+}
+@media(max-width:1050px) and (min-width:851px) {
+  .artwork-hero .hero-inner { min-height:660px; grid-template-columns:49% 51%; }
+  .specimen-art { object-position:64% 50%; }
+}
+@media(max-width:850px) {
+  .artwork-hero .hero-inner { display:block; padding:52px 22px 60px; min-height:0; }
+  .hero-artwork { top:auto; height:570px; bottom:25px; }
+  .specimen-art { object-position:90% 50%; }
+  .artwork-hero::before { background:linear-gradient(#061525 0%,#061525 38%,#061525c7 47%,transparent 64%); }
+  .artwork-hero .hero-copy { max-width:570px; }
+  .artwork-hero .hero-note { margin-top:26px; max-width:400px; }
+  .artwork-mobile-space { display:block; height:390px; }
+  .artwork-controls { right:22px; bottom:18px; }
+  .artwork-hero .hero-bottom { background:#061525e8; }
+}
+@media(max-width:520px) {
+  .artwork-hero .hero-inner { padding-top:42px; }
+  .hero-artwork { height:460px; bottom:30px; }
+  .specimen-art { object-position:88% 50%; }
+  .artwork-hero::before { background:linear-gradient(#061525 0%,#061525 43%,#061525cc 52%,transparent 68%); }
+  .artwork-mobile-space { height:330px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .specimen-art,.specimen-light { animation:none!important; will-change:auto; transform:none; }
+}

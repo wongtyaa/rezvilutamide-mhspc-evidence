@@ -1,6 +1,6 @@
 # CHART Evidence Atlas
 
-A static, dependency-free scientific microsite about rezvilutamide in high-volume mHSPC. Open `index.html` locally or serve the directory on any static host, including GitHub Pages. The 3D anatomy is procedurally generated with WebGL and has an inline SVG fallback.
+A static, dependency-free scientific microsite about rezvilutamide in high-volume mHSPC. Open `index.html` locally or serve the directory on any static host, including GitHub Pages. The selected original generated artwork has a subtle automatic perspective rotation with pause, reduced-motion and offscreen controls. This is animated 2D artwork, not a reconstructed 360-degree model.
 
 ## Clinical source record
 
@@ -13,8 +13,11 @@ A static, dependency-free scientific microsite about rezvilutamide in high-volum
 - [NCT03520478](https://clinicaltrials.gov/study/NCT03520478), study registry.
 - [NCI hormone therapy fact sheet](https://www.cancer.gov/types/prostate/prostate-hormone-therapy-fact-sheet), class-level mechanism context.
 
-The 2026 CHART results are a meeting abstract. Each ARPI comparison is within its own randomized trial; cross-trial figures are not efficacy rankings. Bars show reported medians, not reconstructed Kaplan–Meier curves. The anatomical and mechanism visuals are original simplified educational models, not patient imaging or molecular structures.
+The 2026 CHART results are a meeting abstract. Each ARPI comparison is within its own randomized trial; cross-trial figures are not efficacy rankings. Bars show reported medians, not reconstructed Kaplan–Meier curves. The anatomical artwork and mechanism illustration are original educational visuals, not patient imaging or molecular structures.
+
+- [ENZAMET eight-year report](https://doi.org/10.1016/j.annonc.2026.07.412): median OS 7.9 vs 5.8 years, HR 0.73 (95% CI 0.63–0.86); eight-year OS 50% vs 40%.
+- [ARANOTE label, Table 8](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a7cb212-56e4-4b9d-a73d-bfee7fe4735e): final OS median NR in both arms, HR 0.78 (95% CI 0.58–1.05), not statistically significant.
 
 ## Hosting
 
-Publish the five files in this directory at the repository root. In GitHub Pages, select the `main` branch and `/ (root)` folder as the source. No build step, runtime API, API key, paid service, or external asset is required.
+Publish all files in this directory at the repository root. In GitHub Pages, select the `main` branch and `/ (root)` folder as the source. No build step, runtime API, API key, paid service, or external asset is required.
