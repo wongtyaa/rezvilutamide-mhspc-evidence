@@ -2,6 +2,8 @@
 
 A static, dependency-free scientific microsite about rezvilutamide in high-volume mHSPC. Open `index.html` locally or serve the directory on any static host, including GitHub Pages. The selected original generated artwork has a subtle automatic perspective rotation with pause, reduced-motion and offscreen controls. This is animated 2D artwork, not a reconstructed 360-degree model.
 
+The CHART study film is stored in this repository as `chart-study-reel.mp4`, with a local poster image and English WebVTT captions. It plays only when requested, so the film does not add to initial page loading. The film includes original artwork, narration and graphics, and summarizes findings from the dated analyses noted in the page's source record.
+
 ## Clinical source record
 
 - Gu et al., *The Lancet Oncology* (2022), DOI: [10.1016/S1470-2045(22)00507-1](https://doi.org/10.1016/S1470-2045(22)00507-1). Primary CHART report; 2022 interim OS HR 0.58 (95% CI 0.44–0.77), with median OS not reached in both arms.

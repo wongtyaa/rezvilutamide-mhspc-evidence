@@ -1,0 +1,21 @@
+.study-film{padding-top:92px;padding-bottom:100px;background:linear-gradient(180deg,#f4f9fb 0%,#fff 88%);border-bottom:1px solid #e5edf0}
+.film-intro{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:36px}
+.film-intro h2{font-size:clamp(38px,5vw,64px);line-height:1.05;letter-spacing:-.055em;margin:12px 0 0;color:#0b1730}
+.film-intro h2 em{font-weight:400;color:#008f95}
+.film-intro>p{max-width:380px;margin:0 0 5px;color:#647f8a;font-size:13px;line-height:1.75}
+.film-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;background:#081827;box-shadow:0 22px 50px #0b17301b}
+.film-frame{min-width:0;background:#071723;aspect-ratio:16/9}
+.film-frame video{display:block;width:100%;height:100%;object-fit:contain;background:#071723}
+.film-sidebar{display:flex;flex-direction:column;padding:30px 27px;color:#e3eef1;border-left:1px solid #b3e0de24}
+.film-index{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#7ed2ce;margin:0 0 auto;font-weight:750}
+.film-index span{color:#819eaa;margin:0 8px}
+.film-sidebar h3{font-size:25px;line-height:1.15;letter-spacing:-.035em;font-weight:600;margin:38px 0 15px}
+.film-sidebar>p:not(.film-index){color:#afc3cc;font-size:11px;line-height:1.7}
+.film-rule{height:1px;background:#a2d7d526;margin:15px 0 14px}
+.film-sidebar .film-meta{color:#95dad7!important;font-size:10px!important;letter-spacing:.04em}
+.film-sidebar a{color:#bde7e4;font-size:10px;font-weight:750;border-bottom:1px solid #6caeae7d;width:max-content;margin-top:auto;padding-bottom:5px}
+.film-sidebar a span{margin-left:10px}
+.film-footnote{max-width:880px;color:#738a95;font-size:11px;line-height:1.7;margin:21px 0 0}
+.film-footnote a{color:#067e85;border-bottom:1px solid #90c4c4}
+@media(max-width:900px){.film-layout{grid-template-columns:1fr}.film-sidebar{border-left:0;border-top:1px solid #b3e0de24;display:grid;grid-template-columns:1fr 1fr;gap:10px 30px;padding:24px}.film-index,.film-sidebar h3,.film-sidebar>p:not(.film-index),.film-sidebar a{margin:0}.film-sidebar h3{font-size:22px}.film-rule{display:none}.film-sidebar a{align-self:end}.film-intro{align-items:start}}
+@media(max-width:620px){.study-film{padding-top:75px;padding-bottom:75px}.film-intro{display:block;margin-bottom:25px}.film-intro>p{margin-top:15px;font-size:12px}.film-sidebar{display:block;padding:22px}.film-sidebar h3{margin:13px 0 10px}.film-sidebar .film-meta{margin:13px 0}.film-sidebar a{display:inline-block}.film-footnote{font-size:10px}}
